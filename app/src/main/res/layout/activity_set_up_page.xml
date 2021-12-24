@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SetUpPage"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvAccountSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Set up"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/purple_700"
+        android:gravity="center_horizontal"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/profileImage"
+        android:src="@drawable/profile_picture"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvAccountSetup"
+        app:civ_shadow_color="#3f51b5"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profileImage"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:tint="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/camera_alt"/>
+
+    <TextView
+        android:id="@+id/tvEnterInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Enter Name and Institution to continue"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/purple_700"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/cameraButton"
+        android:gravity="center_horizontal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@id/tvEnterInfo"
+        android:padding="10dp"
+        app:boxBackgroundColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:hint="Name"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/institution"
+        android:layout_below="@id/name"
+        android:padding="10dp"
+        app:boxBackgroundColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etInstitution"
+            android:hint="Institution"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/department"
+        android:layout_below="@id/institution"
+        android:padding="10dp"
+        app:boxBackgroundColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDepartment"
+            android:hint="Department"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/level"
+        android:layout_below="@id/department"
+        android:padding="10dp"
+        app:boxBackgroundColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLevel"
+            android:hint="Level"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/continueBotton"
+        android:layout_alignParentBottom="true"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bottom_next"/>
+
+</RelativeLayout>

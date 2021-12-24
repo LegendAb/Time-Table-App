@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:id="@+id/rowLayout">
+
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/transparent"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/tvId"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:30"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="27dp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/tvCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITC4403"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="28dp"
+            android:layout_below="@id/tvDay"/>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".framents.list.ListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingActionButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/ic_baseline_add"/>
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Click to add course"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/purple_500"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>
